@@ -7,18 +7,87 @@
         <meta name="viewport" content="width=device-width,initial scale=1.0">
         <meta name="description" content="this is for user login">
         <title>LogIn Page</title>
-        <style></style>
+        <style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(120deg,#6a11cb,#2575fc);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.login-container{
+    background:white;
+    padding:35px;
+    width:320px;
+    border-radius:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+    text-align:center;
+}
+.login-container h2{
+    margin-bottom:20px;
+    color:#333;
+}
+.login-container label{
+    font-weight:bold;
+    font-size:14px;
+    display:block;
+    text-align:left;
+    margin-top:10px;
+}
+.login-container input{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:14px;
+}
+.login-container input:focus{
+    border-color:#2575fc;
+    outline:none;
+    box-shadow:0 0 5px rgba(37,117,252,0.5);
+}
+.login-container button{
+    width:100%;
+    padding:10px;
+    margin-top:20px;
+    border:none;
+    border-radius:6px;
+    background:#2575fc;
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+    transition:0.3s;
+}
+.login-container button:hover{
+    background:#1a5edb;
+    transform:scale(1.03);
+}
+.login-container a{
+    display:block;
+    margin-top:10px;
+    font-size:13px;
+    text-decoration:none;
+    color:#2575fc;
+}
+.login-container a:hover{
+    text-decoration:underline;
+}</style>
     </head>
     <body>
-      <center>
-        <h2>Login page</h2>
-        <label for="username">Enter Your Username</label><br>
-        <input type="tect" placeholder="username"><br><br>
-        <label for="password">Enter your Password</label><br>
-        <input type="password" placeholder="password"><br><br>
-        <center><a href="DashBoard.html"><button>Submit</button></a></center>
-        <a href="Registration.html">create a new Account</a><br>
-        <a href="Forgot_Password.html">Forgot Password</a>
-      </center>
+<div class="login-container">
+<h2>Login Page</h2>
+<label>Enter Your Username</label>
+<input type="text" placeholder="username">
+<label>Enter your Password</label>
+<input type="password" placeholder="password">
+<a href="DashBoard.html">
+<button>Login</button>
+</a>
+<a href="Registration.html">Create a new account</a>
+<a href="Forgot_Password.html">Forgot Password</a>
+</div>
 </body>
 </HTML>
